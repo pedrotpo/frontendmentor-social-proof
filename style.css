@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding-top: 45px;
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0;
+  }
+}
+
+header {
+  margin: 0 auto;
+  width: 327px;
+  font-weight: 700;
+  color: #502050;
+  text-align: center;
+}
+
+section {
+  margin: 0 auto;
+  width: 327px;
+  line-height: 25px;
+}
+
+.attribution {
+  color: #3e41a3;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.top-bg {
+  background-image: url("./images/bg-pattern-top-mobile.svg");
+  height: 232px;
+  width: 374px;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .top-bg {
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+    height: 362px;
+    width: 584px;
+  }
+}
+
+.bottom-bg {
+  background-image: url("./images/bg-pattern-bottom-mobile.svg");
+  height: 232px;
+  width: 374px;
+  position: relative;
+  bottom: 232px;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .bottom-bg {
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
+    height: 673px;
+    width: 1085px;
+    bottom: 673px;
+  }
+}
+
+.ratings {
+  text-align: center;
+  color: #937b92;
+}
+
+.ratings p {
+  margin: 0 auto 30px;
+  width: 320px;
+  font-size: 14px;
+}
+
+.ratings .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7f2f7;
+  color: #502050;
+  border-radius: 0.5rem;
+  margin: 15px 0;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
+.ratings .rating div {
+  margin-top: 2px;
+  margin-bottom: 6px;
+  height: 16px;
+}
+
+.ratings .rating div img {
+  width: 17px;
+  margin: 0 4px;
+}
+
+.ratings .rating span {
+  margin-top: 6px;
+  margin-bottom: 2px;
+  height: 16px;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+
+.reviews .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #502050;
+  color: #f7f2f7;
+  border-radius: 0.5rem;
+  margin: 15px 0;
+  padding: 30px;
+  font-size: 13px;
+}
+
+.reviews .review span {
+  margin-top: 20px;
+}
+
+.reviews .review .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.reviews .review .profile img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviews .review .profile div {
+  padding-left: 15px;
+}
+
+.reviews .review .profile div p {
+  margin: 6px 0;
+  line-height: normal;
+}
+
+.reviews .review .profile div p:first-child {
+  font-weight: 500;
+}
+
+.reviews .review .profile div p:last-child {
+  color: #ee68a4;
+}
+/*# sourceMappingURL=style.css.map */

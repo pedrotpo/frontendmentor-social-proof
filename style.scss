@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding-top: 45px;
+    height: 100vh;
+
+    @media (min-width: 768px) {
+        padding: 0;
+        
+    }
+}
+
+header {
+    margin: 0 auto;
+    width: 327px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+
+section {
+    margin: 0 auto;
+    width: 327px;
+    line-height: 25px;
+}
+
+.attribution {
+    color: hsl(238, 45%, 44%);
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 100px;
+    
+    a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+.top-bg {
+    background-image: url("./images/bg-pattern-top-mobile.svg");
+    height: 232px;
+    width: 374px;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    @media (min-width: 768px) {
+        background-image: url("./images/bg-pattern-top-desktop.svg");
+        height: 362px;
+        width: 584px;   
+    }
+
+}
+
+.bottom-bg {
+    background-image: url("./images/bg-pattern-bottom-mobile.svg");
+    height: 232px;
+    width: 374px;
+    position: relative;
+    bottom: 232px;
+    z-index: -1;
+
+    @media (min-width: 768px) {
+        background-image: url("./images/bg-pattern-bottom-desktop.svg");
+        height: 673px;
+        width: 1085px;
+        bottom: 673px;
+        
+    }
+}
+
+.ratings {
+    text-align: center;
+    color: hsl(303, 10%, 53%);
+
+    p {
+        margin: 0 auto 30px;
+        width: 320px;
+        font-size: 14px;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: hsl(300, 24%, 96%);
+        color: hsl(300, 43%, 22%);
+        border-radius: 0.5rem;
+        margin: 15px 0;
+        font-weight: 700;
+        padding: 15px 0;
+
+        div {
+            margin-top: 2px;
+            margin-bottom: 6px;
+            height: 16px;
+            img {
+                width: 17px;
+                margin: 0 4px;
+            }
+
+        }
+
+        span {
+            margin-top: 6px;
+            margin-bottom: 2px;
+            height: 16px;
+        }
+    }
+}
+
+.reviews {
+    margin-top: 30px;
+
+    .review {
+        display: flex;
+        flex-direction: column;
+        background: hsl(300, 43%, 22%);
+        color: hsl(300, 24%, 96%);
+        border-radius: 0.5rem;
+        margin: 15px 0;
+        padding: 30px;
+        font-size: 13px;
+
+        span {
+            margin-top: 20px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            
+            img {
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            div {
+                padding-left: 15px;
+                p {
+                    margin: 6px 0;
+                    line-height: normal;
+                }
+
+                p:first-child {
+                    font-weight: 500;
+                }
+
+                p:last-child {
+                    color: hsl(333, 80%, 67%);
+                }
+            }
+        }
+    }
+}
+
